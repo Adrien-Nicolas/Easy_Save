@@ -1,0 +1,80 @@
+﻿<Window x:Class="ClientEasySaveV2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientEasySaveV2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1200">
+    <Grid>
+        <TextBlock Name="Advancement" HorizontalAlignment="Left" Margin="31,19,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top"/>
+
+
+
+
+        <ListView Name="JobGrid" Background="LightGray" Margin="10,143,6,143"  ItemsSource="{Binding ListJob, UpdateSourceTrigger=PropertyChanged}" FontFamily="Arial Black">
+            <ListView.View>
+
+                <GridView x:Name="grdTest" >
+                    <GridViewColumn Header="Name" DisplayMemberBinding="{Binding name}"  Width="80"/>
+                    <GridViewColumn Header="SourcePath"  Width="200" >
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Width="180" Name="SourcePathBox" Text="{Binding sourcePath, Mode=TwoWay}" ></TextBlock>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="TargetPath"  Width="200" >
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Width="180" Name="TargetPathBox" Text="{Binding targetPath, Mode=TwoWay}"></TextBlock>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Full Mode ?"  Width="80">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <CheckBox Width="60" Name="CheckBox" IsChecked="{Binding fullMode, Mode=TwoWay}" IsEnabled="false"></CheckBox>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="N. Exec" DisplayMemberBinding="{Binding nbrSave}"  Width="60"/>
+                    <GridViewColumn Header="Last Save" DisplayMemberBinding="{Binding lastSave}"  Width="150"/>
+                    <GridViewColumn Header="Job Progress"  Width="400">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+
+                                    <Button BorderThickness="0" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Margin="2 2" Width="30" Height="30" Click="LoadJob_Click">
+                                        <Image Source="Assets/load.png"></Image>
+                                    </Button>
+                                    <Button BorderThickness="0" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Margin="2 2" Width="30" Height="30" Click="PauseJob_Click">
+                                        <Image Source="../Assets/pause.png"></Image>
+                                    </Button>
+                                    <Button BorderThickness="0" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Margin="2 2" Width="30" Height="30" Click="StopJob_Click">
+                                        <Image Source="Assets/stop.png"></Image>
+                                    </Button>
+                                    <Button x:Name="PlayPauseButton" BorderThickness="0" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" Margin="2 2" Width="30" Height="30" Click="PlayJob_Click">
+                                        <Image Source="../Assets/play.png"></Image>
+                                    </Button>
+                                    <ProgressBar x:Name="progressBar" Margin="5 2" Width="200" Value="{Binding progress}"></ProgressBar>
+                                    <TextBlock Text="{Binding ElementName=progressBar, Path=Value, StringFormat={}{0:0}%}" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <Button Name="AddButton" Content="AddJob" HorizontalAlignment="Left" Margin="31,98,0,0" VerticalAlignment="Top" Click="AddButton_Click" Width="76"/>
+
+        <Button Name="ConnectButton" Content="Connect" HorizontalAlignment="Left" Margin="694,60,0,0" VerticalAlignment="Top" Click="Button_Click_ConnectButton" Width="76"/>
+        <Button Name="DisconnectButton" Content="Disconnect" HorizontalAlignment="Left" Margin="695,98,0,0" VerticalAlignment="Top" Width="72" Click="Button_Click_Disconnect"/>
+        <Label Name="IPLabel" Content="IP" HorizontalAlignment="Left" Margin="545,19,0,0" VerticalAlignment="Top"/>
+        <Label Name="PORTLabel" Content="PORT" HorizontalAlignment="Left" Margin="649,19,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="IPTextBox" HorizontalAlignment="Left" Margin="570,23,0,0" Text="127.0.0.1" TextWrapping="Wrap" VerticalAlignment="Top" Width="74"/>
+        <TextBox Name="PORTTextBox" HorizontalAlignment="Left" Margin="696,23,0,0" Text="12234" TextWrapping="Wrap" VerticalAlignment="Top" Width="74"/>
+
+    </Grid>
+</Window>

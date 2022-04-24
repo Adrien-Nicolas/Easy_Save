@@ -1,0 +1,181 @@
+\hypertarget{class_easy_save_1_1_view_models_1_1_job_manager}{}\doxysection{Easy\+Save.\+View\+Models.\+Job\+Manager Class Reference}
+\label{class_easy_save_1_1_view_models_1_1_job_manager}\index{EasySave.ViewModels.JobManager@{EasySave.ViewModels.JobManager}}
+
+
+Class to manage saves  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}} \mbox{\hyperlink{class_easy_save_1_1_view_models_1_1_job_manager_abbfde5d0ba0a3988e7c09429ecba2acc}{create\+Job}} (string source\+Path, string target\+Path, int nbr)
+\begin{DoxyCompactList}\small\item\em Method to create a Job object and return it \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_easy_save_1_1_view_models_1_1_job_manager_a2c037cd863a67c8a6601bb0244fea2ec}{Update}} (\mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}} job)
+\begin{DoxyCompactList}\small\item\em Method allowing to update a job \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}} $>$ \mbox{\hyperlink{class_easy_save_1_1_view_models_1_1_job_manager_a8df1638c704b41e8127e36ebd502578d}{get\+All\+Job}} ()
+\begin{DoxyCompactList}\small\item\em Method allowing to return a list of all Job \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_easy_save_1_1_view_models_1_1_job_manager_a8909d331b0ff13e56ddd9650f2763c06}{verif\+Path}} (\mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}} job)
+\begin{DoxyCompactList}\small\item\em Method allowing to verify if a source\+Path of a Job exist \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_easy_save_1_1_view_models_1_1_job_manager_a5a15451a20af5c5c4faf833548ad3779}{add\+New\+Job}} ()
+\begin{DoxyCompactList}\small\item\em method allowing to add a new Job \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_easy_save_1_1_view_models_1_1_job_manager_a619c400d9456d180aa66e688c391fb9e}{Is\+Job\+In\+List}} (\mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}} job\+Base, List$<$ \mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}} $>$ list\+Job)
+\begin{DoxyCompactList}\small\item\em Method allowing to verif if a job is in List of Job. \end{DoxyCompactList}\item 
+static int \mbox{\hyperlink{class_easy_save_1_1_view_models_1_1_job_manager_a368008fe17c25a56d8ef8897f46524ea}{Find\+Index\+Job\+In\+List}} (\mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}} job\+Base, List$<$ \mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}} $>$ list\+Job)
+\begin{DoxyCompactList}\small\item\em Method alolowing to return index of a Job in a List of Job. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_easy_save_1_1_view_models_1_1_job_manager_a9aba13b21d6db9fdea0176e889e698e2}{Delete\+Job}} (\mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}} job\+To\+Del)
+\begin{DoxyCompactList}\small\item\em Method allowing to delete Job with his index in the list of Job. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_easy_save_1_1_view_models_1_1_job_manager_a9a6e0ccefa5577eb5ec8b588f3c73dca}\label{class_easy_save_1_1_view_models_1_1_job_manager_a9a6e0ccefa5577eb5ec8b588f3c73dca}} 
+static string {\bfseries path\+File\+Job} = App\+Domain.\+Current\+Domain.\+Base\+Directory + \char`\"{}/Job/Job.\+json\char`\"{}
+\item 
+\mbox{\Hypertarget{class_easy_save_1_1_view_models_1_1_job_manager_a2b002b4b507c55cafefeb32e952f75a2}\label{class_easy_save_1_1_view_models_1_1_job_manager_a2b002b4b507c55cafefeb32e952f75a2}} 
+static Mutex {\bfseries update\+Mutex} = new Mutex()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class to manage saves 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_easy_save_1_1_view_models_1_1_job_manager_a5a15451a20af5c5c4faf833548ad3779}\label{class_easy_save_1_1_view_models_1_1_job_manager_a5a15451a20af5c5c4faf833548ad3779}} 
+\index{EasySave.ViewModels.JobManager@{EasySave.ViewModels.JobManager}!addNewJob@{addNewJob}}
+\index{addNewJob@{addNewJob}!EasySave.ViewModels.JobManager@{EasySave.ViewModels.JobManager}}
+\doxysubsubsection{\texorpdfstring{addNewJob()}{addNewJob()}}
+{\footnotesize\ttfamily static void Easy\+Save.\+View\+Models.\+Job\+Manager.\+add\+New\+Job (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+method allowing to add a new Job 
+
+\mbox{\Hypertarget{class_easy_save_1_1_view_models_1_1_job_manager_abbfde5d0ba0a3988e7c09429ecba2acc}\label{class_easy_save_1_1_view_models_1_1_job_manager_abbfde5d0ba0a3988e7c09429ecba2acc}} 
+\index{EasySave.ViewModels.JobManager@{EasySave.ViewModels.JobManager}!createJob@{createJob}}
+\index{createJob@{createJob}!EasySave.ViewModels.JobManager@{EasySave.ViewModels.JobManager}}
+\doxysubsubsection{\texorpdfstring{createJob()}{createJob()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}} Easy\+Save.\+View\+Models.\+Job\+Manager.\+create\+Job (\begin{DoxyParamCaption}\item[{string}]{source\+Path,  }\item[{string}]{target\+Path,  }\item[{int}]{nbr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Method to create a Job object and return it 
+
+
+\begin{DoxyParams}{Parameters}
+{\em source\+Path} & string\\
+\hline
+{\em target\+Path} & string\\
+\hline
+{\em nbr} & int\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easy_save_1_1_view_models_1_1_job_manager_a9aba13b21d6db9fdea0176e889e698e2}\label{class_easy_save_1_1_view_models_1_1_job_manager_a9aba13b21d6db9fdea0176e889e698e2}} 
+\index{EasySave.ViewModels.JobManager@{EasySave.ViewModels.JobManager}!DeleteJob@{DeleteJob}}
+\index{DeleteJob@{DeleteJob}!EasySave.ViewModels.JobManager@{EasySave.ViewModels.JobManager}}
+\doxysubsubsection{\texorpdfstring{DeleteJob()}{DeleteJob()}}
+{\footnotesize\ttfamily static void Easy\+Save.\+View\+Models.\+Job\+Manager.\+Delete\+Job (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}}}]{job\+To\+Del }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Method allowing to delete Job with his index in the list of Job. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em job\+To\+Del} & Job\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_easy_save_1_1_view_models_1_1_job_manager_a368008fe17c25a56d8ef8897f46524ea}\label{class_easy_save_1_1_view_models_1_1_job_manager_a368008fe17c25a56d8ef8897f46524ea}} 
+\index{EasySave.ViewModels.JobManager@{EasySave.ViewModels.JobManager}!FindIndexJobInList@{FindIndexJobInList}}
+\index{FindIndexJobInList@{FindIndexJobInList}!EasySave.ViewModels.JobManager@{EasySave.ViewModels.JobManager}}
+\doxysubsubsection{\texorpdfstring{FindIndexJobInList()}{FindIndexJobInList()}}
+{\footnotesize\ttfamily static int Easy\+Save.\+View\+Models.\+Job\+Manager.\+Find\+Index\+Job\+In\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}}}]{job\+Base,  }\item[{List$<$ \mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}} $>$}]{list\+Job }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Method alolowing to return index of a Job in a List of Job. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em job\+Base} & Job\\
+\hline
+{\em list\+Job} & List(\+Job)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easy_save_1_1_view_models_1_1_job_manager_a8df1638c704b41e8127e36ebd502578d}\label{class_easy_save_1_1_view_models_1_1_job_manager_a8df1638c704b41e8127e36ebd502578d}} 
+\index{EasySave.ViewModels.JobManager@{EasySave.ViewModels.JobManager}!getAllJob@{getAllJob}}
+\index{getAllJob@{getAllJob}!EasySave.ViewModels.JobManager@{EasySave.ViewModels.JobManager}}
+\doxysubsubsection{\texorpdfstring{getAllJob()}{getAllJob()}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}}$>$ Easy\+Save.\+View\+Models.\+Job\+Manager.\+get\+All\+Job (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Method allowing to return a list of all Job 
+
+\begin{DoxyReturn}{Returns}
+List(\+Job)
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easy_save_1_1_view_models_1_1_job_manager_a619c400d9456d180aa66e688c391fb9e}\label{class_easy_save_1_1_view_models_1_1_job_manager_a619c400d9456d180aa66e688c391fb9e}} 
+\index{EasySave.ViewModels.JobManager@{EasySave.ViewModels.JobManager}!IsJobInList@{IsJobInList}}
+\index{IsJobInList@{IsJobInList}!EasySave.ViewModels.JobManager@{EasySave.ViewModels.JobManager}}
+\doxysubsubsection{\texorpdfstring{IsJobInList()}{IsJobInList()}}
+{\footnotesize\ttfamily static bool Easy\+Save.\+View\+Models.\+Job\+Manager.\+Is\+Job\+In\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}}}]{job\+Base,  }\item[{List$<$ \mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}} $>$}]{list\+Job }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Method allowing to verif if a job is in List of Job. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em job\+Base} & Job\\
+\hline
+{\em list\+Job} & List(job)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easy_save_1_1_view_models_1_1_job_manager_a2c037cd863a67c8a6601bb0244fea2ec}\label{class_easy_save_1_1_view_models_1_1_job_manager_a2c037cd863a67c8a6601bb0244fea2ec}} 
+\index{EasySave.ViewModels.JobManager@{EasySave.ViewModels.JobManager}!Update@{Update}}
+\index{Update@{Update}!EasySave.ViewModels.JobManager@{EasySave.ViewModels.JobManager}}
+\doxysubsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily static void Easy\+Save.\+View\+Models.\+Job\+Manager.\+Update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}}}]{job }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Method allowing to update a job 
+
+
+\begin{DoxyParams}{Parameters}
+{\em job} & Job\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_easy_save_1_1_view_models_1_1_job_manager_a8909d331b0ff13e56ddd9650f2763c06}\label{class_easy_save_1_1_view_models_1_1_job_manager_a8909d331b0ff13e56ddd9650f2763c06}} 
+\index{EasySave.ViewModels.JobManager@{EasySave.ViewModels.JobManager}!verifPath@{verifPath}}
+\index{verifPath@{verifPath}!EasySave.ViewModels.JobManager@{EasySave.ViewModels.JobManager}}
+\doxysubsubsection{\texorpdfstring{verifPath()}{verifPath()}}
+{\footnotesize\ttfamily static bool Easy\+Save.\+View\+Models.\+Job\+Manager.\+verif\+Path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}}}]{job }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Method allowing to verify if a source\+Path of a Job exist 
+
+
+\begin{DoxyParams}{Parameters}
+{\em job} & Job\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+View\+Models/Job\+Manager.\+cs\end{DoxyCompactItemize}

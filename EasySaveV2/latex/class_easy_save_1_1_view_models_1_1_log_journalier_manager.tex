@@ -1,0 +1,81 @@
+\hypertarget{class_easy_save_1_1_view_models_1_1_log_journalier_manager}{}\doxysection{Easy\+Save.\+View\+Models.\+Log\+Journalier\+Manager Class Reference}
+\label{class_easy_save_1_1_view_models_1_1_log_journalier_manager}\index{EasySave.ViewModels.LogJournalierManager@{EasySave.ViewModels.LogJournalierManager}}
+
+
+Daily logs controller class  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_easy_save_1_1_view_models_1_1_log_journalier_manager_a2b940b63cd2fcb1dbdb6a7970dab207c}\label{class_easy_save_1_1_view_models_1_1_log_journalier_manager_a2b940b63cd2fcb1dbdb6a7970dab207c}} 
+void {\bfseries Maj\+Interact\+File} (string interact\+File\+Name)
+\item 
+\mbox{\hyperlink{class_easy_save_1_1_models_1_1_log_journalier}{Log\+Journalier}} \mbox{\hyperlink{class_easy_save_1_1_view_models_1_1_log_journalier_manager_a4d9871c76f97b474024f2a700bdf7def}{create\+From\+Job}} (\mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}} job, string file\+Source\+Path, string file\+Target\+Path, double transfert\+Time, double crypt\+Time)
+\begin{DoxyCompactList}\small\item\em Function to create a daily log \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_easy_save_1_1_view_models_1_1_log_journalier_manager_ab21de4309d09969f031e52d915b210ca}{Write}} (\mbox{\hyperlink{class_easy_save_1_1_models_1_1_log_journalier}{Log\+Journalier}} log\+Journalier)
+\begin{DoxyCompactList}\small\item\em Method to write the log\+Journal.\+json file with the created object Log\+Journal \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_easy_save_1_1_view_models_1_1_log_journalier_manager_ac9068c5eb7c44d1fb8f31d43097a1dbc}\label{class_easy_save_1_1_view_models_1_1_log_journalier_manager_ac9068c5eb7c44d1fb8f31d43097a1dbc}} 
+static \mbox{\hyperlink{class_easy_save_1_1_view_models_1_1_log_journalier_manager}{Log\+Journalier\+Manager}} {\bfseries Get\+Log\+Journalier\+Manager} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_easy_save_1_1_view_models_1_1_log_journalier_manager_ac61aba3d5dfae0d8d07bade95a37e9ce}\label{class_easy_save_1_1_view_models_1_1_log_journalier_manager_ac61aba3d5dfae0d8d07bade95a37e9ce}} 
+static Mutex {\bfseries Write\+Log\+Mutex} = new Mutex()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Daily logs controller class 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_easy_save_1_1_view_models_1_1_log_journalier_manager_a4d9871c76f97b474024f2a700bdf7def}\label{class_easy_save_1_1_view_models_1_1_log_journalier_manager_a4d9871c76f97b474024f2a700bdf7def}} 
+\index{EasySave.ViewModels.LogJournalierManager@{EasySave.ViewModels.LogJournalierManager}!createFromJob@{createFromJob}}
+\index{createFromJob@{createFromJob}!EasySave.ViewModels.LogJournalierManager@{EasySave.ViewModels.LogJournalierManager}}
+\doxysubsubsection{\texorpdfstring{createFromJob()}{createFromJob()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_easy_save_1_1_models_1_1_log_journalier}{Log\+Journalier}} Easy\+Save.\+View\+Models.\+Log\+Journalier\+Manager.\+create\+From\+Job (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}}}]{job,  }\item[{string}]{file\+Source\+Path,  }\item[{string}]{file\+Target\+Path,  }\item[{double}]{transfert\+Time,  }\item[{double}]{crypt\+Time }\end{DoxyParamCaption})}
+
+
+
+Function to create a daily log 
+
+
+\begin{DoxyParams}{Parameters}
+{\em job} & Job\\
+\hline
+{\em file\+Source\+Path} & string\\
+\hline
+{\em file\+Target\+Path} & string\\
+\hline
+{\em transfert\+Time} & double\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Log\+Journalier
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easy_save_1_1_view_models_1_1_log_journalier_manager_ab21de4309d09969f031e52d915b210ca}\label{class_easy_save_1_1_view_models_1_1_log_journalier_manager_ab21de4309d09969f031e52d915b210ca}} 
+\index{EasySave.ViewModels.LogJournalierManager@{EasySave.ViewModels.LogJournalierManager}!Write@{Write}}
+\index{Write@{Write}!EasySave.ViewModels.LogJournalierManager@{EasySave.ViewModels.LogJournalierManager}}
+\doxysubsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily void Easy\+Save.\+View\+Models.\+Log\+Journalier\+Manager.\+Write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_easy_save_1_1_models_1_1_log_journalier}{Log\+Journalier}}}]{log\+Journalier }\end{DoxyParamCaption})}
+
+
+
+Method to write the log\+Journal.\+json file with the created object Log\+Journal 
+
+
+\begin{DoxyParams}{Parameters}
+{\em log\+Journalier} & Log\+Journalier\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+View\+Models/Log\+Journalier\+Manager.\+cs\end{DoxyCompactItemize}

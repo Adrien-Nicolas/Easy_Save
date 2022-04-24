@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\engrenage.gif" />
+    <None Remove="Assets\icone.png" />
+    <None Remove="Assets\load.png" />
+    <None Remove="Assets\logo.png" />
+    <None Remove="Assets\pause.png" />
+    <None Remove="Assets\photo2_adri2.jpg" />
+    <None Remove="Assets\photo_adri2.jpg" />
+    <None Remove="Assets\play.png" />
+    <None Remove="Assets\Sounds\work_finish.mp3" />
+    <None Remove="Assets\stop.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
+    <PackageReference Include="XamlAnimatedGif" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\engrenage.gif" />
+    <Resource Include="Assets\icone.png" />
+    <Resource Include="Assets\load.png" />
+    <Resource Include="Assets\logo.png" />
+    <Resource Include="Assets\pause.png" />
+    <Resource Include="Assets\photo2_adri2.jpg" />
+    <Resource Include="Assets\photo_adri2.jpg" />
+    <Resource Include="Assets\play.png" />
+    <Content Include="Assets\Sounds\work_finish.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Assets\stop.png" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>
+
+</Project>

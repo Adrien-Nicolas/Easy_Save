@@ -1,0 +1,242 @@
+\hypertarget{class_easy_save_1_1_others_1_1_interact_file}{}\doxysection{Easy\+Save.\+Others.\+Interact\+File Class Reference}
+\label{class_easy_save_1_1_others_1_1_interact_file}\index{EasySave.Others.InteractFile@{EasySave.Others.InteractFile}}
+
+
+Classe  
+
+
+Inheritance diagram for Easy\+Save.\+Others.\+Interact\+File\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_easy_save_1_1_others_1_1_interact_file}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{class_easy_save_1_1_others_1_1_interact_file_a9be0ae36bde2a68ac34ba81364a13bb1}{Write$<$ T $>$}} (string path, T t)
+\begin{DoxyCompactList}\small\item\em Method to write on a \mbox{\hyperlink{class_easy_save_1_1_others_1_1_j_s_o_n}{JSON}} file \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_easy_save_1_1_others_1_1_interact_file_a6e56edbc2700098fcd95c679155f3fe8}\label{class_easy_save_1_1_others_1_1_interact_file_a6e56edbc2700098fcd95c679155f3fe8}} 
+virtual bool {\bfseries Write\+List$<$ T $>$} (string path, List$<$ T $>$ listT, bool delete=false)
+\item 
+List$<$ T $>$ \mbox{\hyperlink{class_easy_save_1_1_others_1_1_interact_file_a2215e1fbd76a336d606609bf9db64832}{Read$<$ T $>$}} (string path)
+\begin{DoxyCompactList}\small\item\em Method to return a List of a \mbox{\hyperlink{class_easy_save_1_1_others_1_1_j_s_o_n}{JSON}} file \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_easy_save_1_1_others_1_1_interact_file_a92b0f530989e9396d8fb5b874fd2d43a}{Copy}} (string path\+Source, string path\+Dest)
+\begin{DoxyCompactList}\small\item\em Method to copy files from a folder to another folder \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_easy_save_1_1_others_1_1_interact_file_ac8667ff3518209d34fca1d7921ee724c}{Delete\+File}} (string path)
+\begin{DoxyCompactList}\small\item\em Delete a file and return true if success \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_easy_save_1_1_others_1_1_interact_file_a1a80f5a0d2fabe66e38ddc5f04ee1bc0}{Delete\+Folder}} (string path, bool rcursif)
+\begin{DoxyCompactList}\small\item\em Delete a file and return true if success \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{class_easy_save_1_1_others_1_1_interact_file_a828df4b7a7408259c043c4c42259bdea}{is\+File\+Differents}} (string first, string second)
+\begin{DoxyCompactList}\small\item\em Method to compare two files \end{DoxyCompactList}\item 
+static object \mbox{\hyperlink{class_easy_save_1_1_others_1_1_interact_file_a5e98724de8cc3203e8289cd930ecb386}{read\+Pos$<$ T $>$}} (string path, int pos)
+\begin{DoxyCompactList}\small\item\em Method to read an object from a json file from a position \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_easy_save_1_1_others_1_1_interact_file_ae706b93c37ed27cc60df8e726512755b}{get\+Last\+File\+In\+Folder}} (string path\+Folder)
+\begin{DoxyCompactList}\small\item\em Method to get the last file in a folder \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_easy_save_1_1_others_1_1_interact_file_addec9fd30a66770c11ceae142f09d94b}{Find\+File\+In\+Folder}} (string folder\+Path, string file\+Name)
+\begin{DoxyCompactList}\small\item\em Method allowing to return file from a specific folder \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_easy_save_1_1_others_1_1_interact_file_a738c3bf862ef91b4039df65a302568d1}\label{class_easy_save_1_1_others_1_1_interact_file_a738c3bf862ef91b4039df65a302568d1}} 
+static \mbox{\hyperlink{class_easy_save_1_1_others_1_1_interact_file}{Interact\+File}} {\bfseries get\+Instance\+From\+Name} (string interact\+File\+Name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_easy_save_1_1_others_1_1_interact_file_a92b0f530989e9396d8fb5b874fd2d43a}\label{class_easy_save_1_1_others_1_1_interact_file_a92b0f530989e9396d8fb5b874fd2d43a}} 
+\index{EasySave.Others.InteractFile@{EasySave.Others.InteractFile}!Copy@{Copy}}
+\index{Copy@{Copy}!EasySave.Others.InteractFile@{EasySave.Others.InteractFile}}
+\doxysubsubsection{\texorpdfstring{Copy()}{Copy()}}
+{\footnotesize\ttfamily static void Easy\+Save.\+Others.\+Interact\+File.\+Copy (\begin{DoxyParamCaption}\item[{string}]{path\+Source,  }\item[{string}]{path\+Dest }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Method to copy files from a folder to another folder 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path\+Source} & string\\
+\hline
+{\em path\+Dest} & string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easy_save_1_1_others_1_1_interact_file_ac8667ff3518209d34fca1d7921ee724c}\label{class_easy_save_1_1_others_1_1_interact_file_ac8667ff3518209d34fca1d7921ee724c}} 
+\index{EasySave.Others.InteractFile@{EasySave.Others.InteractFile}!DeleteFile@{DeleteFile}}
+\index{DeleteFile@{DeleteFile}!EasySave.Others.InteractFile@{EasySave.Others.InteractFile}}
+\doxysubsubsection{\texorpdfstring{DeleteFile()}{DeleteFile()}}
+{\footnotesize\ttfamily static bool Easy\+Save.\+Others.\+Interact\+File.\+Delete\+File (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Delete a file and return true if success 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easy_save_1_1_others_1_1_interact_file_a1a80f5a0d2fabe66e38ddc5f04ee1bc0}\label{class_easy_save_1_1_others_1_1_interact_file_a1a80f5a0d2fabe66e38ddc5f04ee1bc0}} 
+\index{EasySave.Others.InteractFile@{EasySave.Others.InteractFile}!DeleteFolder@{DeleteFolder}}
+\index{DeleteFolder@{DeleteFolder}!EasySave.Others.InteractFile@{EasySave.Others.InteractFile}}
+\doxysubsubsection{\texorpdfstring{DeleteFolder()}{DeleteFolder()}}
+{\footnotesize\ttfamily static bool Easy\+Save.\+Others.\+Interact\+File.\+Delete\+Folder (\begin{DoxyParamCaption}\item[{string}]{path,  }\item[{bool}]{rcursif }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Delete a file and return true if success 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easy_save_1_1_others_1_1_interact_file_addec9fd30a66770c11ceae142f09d94b}\label{class_easy_save_1_1_others_1_1_interact_file_addec9fd30a66770c11ceae142f09d94b}} 
+\index{EasySave.Others.InteractFile@{EasySave.Others.InteractFile}!FindFileInFolder@{FindFileInFolder}}
+\index{FindFileInFolder@{FindFileInFolder}!EasySave.Others.InteractFile@{EasySave.Others.InteractFile}}
+\doxysubsubsection{\texorpdfstring{FindFileInFolder()}{FindFileInFolder()}}
+{\footnotesize\ttfamily static string Easy\+Save.\+Others.\+Interact\+File.\+Find\+File\+In\+Folder (\begin{DoxyParamCaption}\item[{string}]{folder\+Path,  }\item[{string}]{file\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Method allowing to return file from a specific folder 
+
+
+\begin{DoxyParams}{Parameters}
+{\em folder\+Path} & string\\
+\hline
+{\em file\+Name} & string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easy_save_1_1_others_1_1_interact_file_ae706b93c37ed27cc60df8e726512755b}\label{class_easy_save_1_1_others_1_1_interact_file_ae706b93c37ed27cc60df8e726512755b}} 
+\index{EasySave.Others.InteractFile@{EasySave.Others.InteractFile}!getLastFileInFolder@{getLastFileInFolder}}
+\index{getLastFileInFolder@{getLastFileInFolder}!EasySave.Others.InteractFile@{EasySave.Others.InteractFile}}
+\doxysubsubsection{\texorpdfstring{getLastFileInFolder()}{getLastFileInFolder()}}
+{\footnotesize\ttfamily static string Easy\+Save.\+Others.\+Interact\+File.\+get\+Last\+File\+In\+Folder (\begin{DoxyParamCaption}\item[{string}]{path\+Folder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Method to get the last file in a folder 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path\+Folder} & string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easy_save_1_1_others_1_1_interact_file_a828df4b7a7408259c043c4c42259bdea}\label{class_easy_save_1_1_others_1_1_interact_file_a828df4b7a7408259c043c4c42259bdea}} 
+\index{EasySave.Others.InteractFile@{EasySave.Others.InteractFile}!isFileDifferents@{isFileDifferents}}
+\index{isFileDifferents@{isFileDifferents}!EasySave.Others.InteractFile@{EasySave.Others.InteractFile}}
+\doxysubsubsection{\texorpdfstring{isFileDifferents()}{isFileDifferents()}}
+{\footnotesize\ttfamily static bool Easy\+Save.\+Others.\+Interact\+File.\+is\+File\+Differents (\begin{DoxyParamCaption}\item[{string}]{first,  }\item[{string}]{second }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Method to compare two files 
+
+
+\begin{DoxyParams}{Parameters}
+{\em first} & string\\
+\hline
+{\em second} & string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easy_save_1_1_others_1_1_interact_file_a2215e1fbd76a336d606609bf9db64832}\label{class_easy_save_1_1_others_1_1_interact_file_a2215e1fbd76a336d606609bf9db64832}} 
+\index{EasySave.Others.InteractFile@{EasySave.Others.InteractFile}!Read$<$ T $>$@{Read$<$ T $>$}}
+\index{Read$<$ T $>$@{Read$<$ T $>$}!EasySave.Others.InteractFile@{EasySave.Others.InteractFile}}
+\doxysubsubsection{\texorpdfstring{Read$<$ T $>$()}{Read< T >()}}
+{\footnotesize\ttfamily List$<$T$>$ Easy\+Save.\+Others.\+Interact\+File.\+Read$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})}
+
+
+
+Method to return a List of a \mbox{\hyperlink{class_easy_save_1_1_others_1_1_j_s_o_n}{JSON}} file 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & objet\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em path} & string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easy_save_1_1_others_1_1_interact_file_a5e98724de8cc3203e8289cd930ecb386}\label{class_easy_save_1_1_others_1_1_interact_file_a5e98724de8cc3203e8289cd930ecb386}} 
+\index{EasySave.Others.InteractFile@{EasySave.Others.InteractFile}!readPos$<$ T $>$@{readPos$<$ T $>$}}
+\index{readPos$<$ T $>$@{readPos$<$ T $>$}!EasySave.Others.InteractFile@{EasySave.Others.InteractFile}}
+\doxysubsubsection{\texorpdfstring{readPos$<$ T $>$()}{readPos< T >()}}
+{\footnotesize\ttfamily static object Easy\+Save.\+Others.\+Interact\+File.\+read\+Pos$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{path,  }\item[{int}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Method to read an object from a json file from a position 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & string\\
+\hline
+{\em pos} & int\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+object
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easy_save_1_1_others_1_1_interact_file_a9be0ae36bde2a68ac34ba81364a13bb1}\label{class_easy_save_1_1_others_1_1_interact_file_a9be0ae36bde2a68ac34ba81364a13bb1}} 
+\index{EasySave.Others.InteractFile@{EasySave.Others.InteractFile}!Write$<$ T $>$@{Write$<$ T $>$}}
+\index{Write$<$ T $>$@{Write$<$ T $>$}!EasySave.Others.InteractFile@{EasySave.Others.InteractFile}}
+\doxysubsubsection{\texorpdfstring{Write$<$ T $>$()}{Write< T >()}}
+{\footnotesize\ttfamily virtual bool Easy\+Save.\+Others.\+Interact\+File.\+Write$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{path,  }\item[{T}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Method to write on a \mbox{\hyperlink{class_easy_save_1_1_others_1_1_j_s_o_n}{JSON}} file 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Objet\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em path} & string\\
+\hline
+{\em t} & instance\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_easy_save_v2_1_1_others_1_1_x_m_l_a88da8cf8241fc2fb830ef00e31038cf7}{Easy\+Save\+V2.\+Others.\+XML}}, and \mbox{\hyperlink{class_easy_save_1_1_others_1_1_j_s_o_n_a77c33289968a7b32c1c48f28671f1455}{Easy\+Save.\+Others.\+JSON}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Others/Interact\+File.\+cs\end{DoxyCompactItemize}

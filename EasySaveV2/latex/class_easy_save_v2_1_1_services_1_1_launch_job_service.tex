@@ -1,0 +1,166 @@
+\hypertarget{class_easy_save_v2_1_1_services_1_1_launch_job_service}{}\doxysection{Easy\+Save\+V2.\+Services.\+Launch\+Job\+Service Class Reference}
+\label{class_easy_save_v2_1_1_services_1_1_launch_job_service}\index{EasySaveV2.Services.LaunchJobService@{EasySaveV2.Services.LaunchJobService}}
+
+
+Use it to Manage and Launch job  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_easy_save_v2_1_1_services_1_1_launch_job_service_a871a9ea703edb6730bd912a12758bfcb}\label{class_easy_save_v2_1_1_services_1_1_launch_job_service_a871a9ea703edb6730bd912a12758bfcb}} 
+delegate void {\bfseries Progress\+Job\+Change} (\mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}} j)
+\item 
+\mbox{\Hypertarget{class_easy_save_v2_1_1_services_1_1_launch_job_service_a853bd6866b04de0c1f41a95eaef0aff5}\label{class_easy_save_v2_1_1_services_1_1_launch_job_service_a853bd6866b04de0c1f41a95eaef0aff5}} 
+delegate void {\bfseries Logi\+Metier\+Detect} (\mbox{\hyperlink{class_easy_save_v2_1_1_services_1_1_launch_job_service}{Launch\+Job\+Service}} l)
+\item 
+\mbox{\Hypertarget{class_easy_save_v2_1_1_services_1_1_launch_job_service_a72b118b11f31a85ecae4e33d63cc487b}\label{class_easy_save_v2_1_1_services_1_1_launch_job_service_a72b118b11f31a85ecae4e33d63cc487b}} 
+delegate void {\bfseries Job\+Finish} ()
+\item 
+bool \mbox{\hyperlink{class_easy_save_v2_1_1_services_1_1_launch_job_service_acd2b778a14ef3252aed63c75b057a127}{is\+Logiciel\+Metier\+Running}} ()
+\begin{DoxyCompactList}\small\item\em Check if the Work Processus is Running \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_easy_save_v2_1_1_services_1_1_launch_job_service_a5e06f35da21059f2c760673909c469b2}\label{class_easy_save_v2_1_1_services_1_1_launch_job_service_a5e06f35da21059f2c760673909c469b2}} 
+{\bfseries Launch\+Job\+Service} (\mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}} job)
+\item 
+void \mbox{\hyperlink{class_easy_save_v2_1_1_services_1_1_launch_job_service_a6ee01d92118829c88269b1521a7fe9db}{Launch}} (bool reprendre\+Instant=false, bool l=false)
+\begin{DoxyCompactList}\small\item\em Method allowing to lauch All save in a list of Job. We alson hash all file, delete and recreate targetfolder \end{DoxyCompactList}\item 
+List$<$ string $>$ \mbox{\hyperlink{class_easy_save_v2_1_1_services_1_1_launch_job_service_a7b0677ebdfebb7200c8cfeb50a8a1c57}{Launch\+Copy}} (List$<$ string $>$ file\+To\+Copy, \mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}} job, bool reprendre=false)
+\begin{DoxyCompactList}\small\item\em Method allowing to launch copy \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_easy_save_v2_1_1_services_1_1_launch_job_service}{Launch\+Job\+Service}} \mbox{\hyperlink{class_easy_save_v2_1_1_services_1_1_launch_job_service_aaa04a7fdf749c142b1db12e2905610c6}{get\+Launch\+Job\+Service\+From\+Job}} (\mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}} job)
+\begin{DoxyCompactList}\small\item\em Get Laucnh\+Job\+Service link to a job if exist \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_easy_save_v2_1_1_services_1_1_launch_job_service_a8a6622223aed7162b4097cb4c3b3e23e}\label{class_easy_save_v2_1_1_services_1_1_launch_job_service_a8a6622223aed7162b4097cb4c3b3e23e}} 
+\mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}} {\bfseries job}
+\item 
+\mbox{\Hypertarget{class_easy_save_v2_1_1_services_1_1_launch_job_service_ab35bf2c41f1de5686df19ff277b86b97}\label{class_easy_save_v2_1_1_services_1_1_launch_job_service_ab35bf2c41f1de5686df19ff277b86b97}} 
+bool {\bfseries load}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_easy_save_v2_1_1_services_1_1_launch_job_service_a8848bfe2bb826b6e676867a873eb2839}\label{class_easy_save_v2_1_1_services_1_1_launch_job_service_a8848bfe2bb826b6e676867a873eb2839}} 
+static Semaphore {\bfseries size\+Max\+Mutex} = new Semaphore(2,2)
+\item 
+\mbox{\Hypertarget{class_easy_save_v2_1_1_services_1_1_launch_job_service_ab520e11b1ae6dc5325bb626b4ffe41c0}\label{class_easy_save_v2_1_1_services_1_1_launch_job_service_ab520e11b1ae6dc5325bb626b4ffe41c0}} 
+static List$<$ \mbox{\hyperlink{class_easy_save_v2_1_1_services_1_1_launch_job_service}{Launch\+Job\+Service}} $>$ {\bfseries list\+Job\+Service\+Actif} = new List$<$\mbox{\hyperlink{class_easy_save_v2_1_1_services_1_1_launch_job_service}{Launch\+Job\+Service}}$>$()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_easy_save_v2_1_1_services_1_1_launch_job_service_ab6c7079b106db75dc3010cc49b72a4d1}{Progress\+Bar\+Save}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Method allowing to have value of progress bar \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_easy_save_v2_1_1_services_1_1_launch_job_service_a87f7e5f60e5cadb4972ecf39e1a9b3f3}\label{class_easy_save_v2_1_1_services_1_1_launch_job_service_a87f7e5f60e5cadb4972ecf39e1a9b3f3}} 
+bool {\bfseries suspend} = false\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_easy_save_v2_1_1_services_1_1_launch_job_service_aa58e50efb6796c3514291ab954557ffd}\label{class_easy_save_v2_1_1_services_1_1_launch_job_service_aa58e50efb6796c3514291ab954557ffd}} 
+bool {\bfseries Suspend}\hspace{0.3cm}{\ttfamily  \mbox{[}set\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_easy_save_v2_1_1_services_1_1_launch_job_service_a9ed6ac0025c913943fd9a3749777bf52}\label{class_easy_save_v2_1_1_services_1_1_launch_job_service_a9ed6ac0025c913943fd9a3749777bf52}} 
+Progress\+Job\+Change {\bfseries On\+Progress\+Job\+Changed}
+\item 
+\mbox{\Hypertarget{class_easy_save_v2_1_1_services_1_1_launch_job_service_aa44c5e235ddd813cf96b50964ee875c4}\label{class_easy_save_v2_1_1_services_1_1_launch_job_service_aa44c5e235ddd813cf96b50964ee875c4}} 
+Logi\+Metier\+Detect {\bfseries On\+Logi\+Metier\+Detected}
+\item 
+\mbox{\Hypertarget{class_easy_save_v2_1_1_services_1_1_launch_job_service_a2665c08c39fd3b057d8cc9c4ef63cb9a}\label{class_easy_save_v2_1_1_services_1_1_launch_job_service_a2665c08c39fd3b057d8cc9c4ef63cb9a}} 
+Job\+Finish {\bfseries On\+Job\+Finished}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Use it to Manage and Launch job 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_easy_save_v2_1_1_services_1_1_launch_job_service_aaa04a7fdf749c142b1db12e2905610c6}\label{class_easy_save_v2_1_1_services_1_1_launch_job_service_aaa04a7fdf749c142b1db12e2905610c6}} 
+\index{EasySaveV2.Services.LaunchJobService@{EasySaveV2.Services.LaunchJobService}!getLaunchJobServiceFromJob@{getLaunchJobServiceFromJob}}
+\index{getLaunchJobServiceFromJob@{getLaunchJobServiceFromJob}!EasySaveV2.Services.LaunchJobService@{EasySaveV2.Services.LaunchJobService}}
+\doxysubsubsection{\texorpdfstring{getLaunchJobServiceFromJob()}{getLaunchJobServiceFromJob()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_easy_save_v2_1_1_services_1_1_launch_job_service}{Launch\+Job\+Service}} Easy\+Save\+V2.\+Services.\+Launch\+Job\+Service.\+get\+Launch\+Job\+Service\+From\+Job (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}}}]{job }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Get Laucnh\+Job\+Service link to a job if exist 
+
+
+\begin{DoxyParams}{Parameters}
+{\em job} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easy_save_v2_1_1_services_1_1_launch_job_service_acd2b778a14ef3252aed63c75b057a127}\label{class_easy_save_v2_1_1_services_1_1_launch_job_service_acd2b778a14ef3252aed63c75b057a127}} 
+\index{EasySaveV2.Services.LaunchJobService@{EasySaveV2.Services.LaunchJobService}!isLogicielMetierRunning@{isLogicielMetierRunning}}
+\index{isLogicielMetierRunning@{isLogicielMetierRunning}!EasySaveV2.Services.LaunchJobService@{EasySaveV2.Services.LaunchJobService}}
+\doxysubsubsection{\texorpdfstring{isLogicielMetierRunning()}{isLogicielMetierRunning()}}
+{\footnotesize\ttfamily bool Easy\+Save\+V2.\+Services.\+Launch\+Job\+Service.\+is\+Logiciel\+Metier\+Running (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Check if the Work Processus is Running 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easy_save_v2_1_1_services_1_1_launch_job_service_a6ee01d92118829c88269b1521a7fe9db}\label{class_easy_save_v2_1_1_services_1_1_launch_job_service_a6ee01d92118829c88269b1521a7fe9db}} 
+\index{EasySaveV2.Services.LaunchJobService@{EasySaveV2.Services.LaunchJobService}!Launch@{Launch}}
+\index{Launch@{Launch}!EasySaveV2.Services.LaunchJobService@{EasySaveV2.Services.LaunchJobService}}
+\doxysubsubsection{\texorpdfstring{Launch()}{Launch()}}
+{\footnotesize\ttfamily void Easy\+Save\+V2.\+Services.\+Launch\+Job\+Service.\+Launch (\begin{DoxyParamCaption}\item[{bool}]{reprendre\+Instant = {\ttfamily false},  }\item[{bool}]{l = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Method allowing to lauch All save in a list of Job. We alson hash all file, delete and recreate targetfolder 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tab\+Job} & List(\+Job)\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_easy_save_v2_1_1_services_1_1_launch_job_service_a7b0677ebdfebb7200c8cfeb50a8a1c57}\label{class_easy_save_v2_1_1_services_1_1_launch_job_service_a7b0677ebdfebb7200c8cfeb50a8a1c57}} 
+\index{EasySaveV2.Services.LaunchJobService@{EasySaveV2.Services.LaunchJobService}!LaunchCopy@{LaunchCopy}}
+\index{LaunchCopy@{LaunchCopy}!EasySaveV2.Services.LaunchJobService@{EasySaveV2.Services.LaunchJobService}}
+\doxysubsubsection{\texorpdfstring{LaunchCopy()}{LaunchCopy()}}
+{\footnotesize\ttfamily List$<$string$>$ Easy\+Save\+V2.\+Services.\+Launch\+Job\+Service.\+Launch\+Copy (\begin{DoxyParamCaption}\item[{List$<$ string $>$}]{file\+To\+Copy,  }\item[{\mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}}}]{job,  }\item[{bool}]{reprendre = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Method allowing to launch copy 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+To\+Copy} & List(string)\\
+\hline
+{\em job} & Job\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_easy_save_v2_1_1_services_1_1_launch_job_service_ab6c7079b106db75dc3010cc49b72a4d1}\label{class_easy_save_v2_1_1_services_1_1_launch_job_service_ab6c7079b106db75dc3010cc49b72a4d1}} 
+\index{EasySaveV2.Services.LaunchJobService@{EasySaveV2.Services.LaunchJobService}!ProgressBarSave@{ProgressBarSave}}
+\index{ProgressBarSave@{ProgressBarSave}!EasySaveV2.Services.LaunchJobService@{EasySaveV2.Services.LaunchJobService}}
+\doxysubsubsection{\texorpdfstring{ProgressBarSave}{ProgressBarSave}}
+{\footnotesize\ttfamily int Easy\+Save\+V2.\+Services.\+Launch\+Job\+Service.\+Progress\+Bar\+Save\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Method allowing to have value of progress bar 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Services/Launch\+Job\+Service.\+cs\end{DoxyCompactItemize}

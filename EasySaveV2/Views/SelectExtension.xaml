@@ -1,0 +1,82 @@
+﻿<Page x:Class="EasySaveV2.Views.SelectExtensionView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EasySaveV2.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="1200"
+      Title="SelectExtension">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="../Assets/photo_adri2.jpg" ></ImageBrush>
+        </Grid.Background>
+        <Label FontSize="30" Foreground="LightBlue" Margin="137,90,376,657" FontFamily="Calibri Light">Entrez une extension à exclure</Label>
+        <TextBox Name="ExtensionTexte"  Margin="137,148,453,562" RenderTransformOrigin="0.484,1.469" FontFamily="Arial Black"  />
+        <Button Name="btn1" Content="Add" Click="OnClick1" Margin="137,338,797,385" RenderTransformOrigin="0.609,0.75" FontFamily="Calibri Light" FontSize="14">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="lightblue"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}" CornerRadius="8" BorderBrush="Black" BorderThickness="1">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="MediumPurple" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Button Name="btn2" Content="Supprimer" Click="OnClick2" Margin="481,338,453,385" FontFamily="Calibri Light" FontSize="14">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="lightblue"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}" CornerRadius="8" BorderBrush="Black" BorderThickness="1">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="MediumPurple" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Button Name="btn3" Content="Back" Click="btn3_Click"  Margin="137,531,868,202" FontFamily="Calibri Light" FontSize="14">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="lightblue"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}" CornerRadius="8" BorderBrush="Black" BorderThickness="1">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="MediumPurple" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <ListView Margin="805,148,0,0" Name="ListView1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="284" Height="128" FontFamily="Arial Black" />
+    </Grid>
+</Page>

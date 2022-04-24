@@ -1,0 +1,126 @@
+\hypertarget{class_easy_save_v2_1_1_view_models_1_1_list_job_view_model}{}\doxysection{Easy\+Save\+V2.\+View\+Models.\+List\+Job\+View\+Model Class Reference}
+\label{class_easy_save_v2_1_1_view_models_1_1_list_job_view_model}\index{EasySaveV2.ViewModels.ListJobViewModel@{EasySaveV2.ViewModels.ListJobViewModel}}
+Inheritance diagram for Easy\+Save\+V2.\+View\+Models.\+List\+Job\+View\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_easy_save_v2_1_1_view_models_1_1_list_job_view_model}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_easy_save_v2_1_1_view_models_1_1_list_job_view_model_a1c5efd560a60e22b5de4b4dfa9a55e64}{Start\+Or\+Continue\+Job}} (\mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}} job)
+\begin{DoxyCompactList}\small\item\em Launch Job\+Process if not exit, and continue it if exist and in pause \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_easy_save_v2_1_1_view_models_1_1_list_job_view_model_ad64dee5cf68826108f34b782cbd79406}{Pause\+Job}} (\mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}} job)
+\begin{DoxyCompactList}\small\item\em Pause Job if in Process \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_easy_save_v2_1_1_view_models_1_1_list_job_view_model_a53ab322dedee48d7d25da674c67cf8b2}{Stop\+Job}} (\mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}} job)
+\begin{DoxyCompactList}\small\item\em Stop Job if exist \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_easy_save_v2_1_1_view_models_1_1_list_job_view_model_a96e8121c04e6f7c5cf869a6ba62e707a}{Load\+Job}} (\mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}} job)
+\begin{DoxyCompactList}\small\item\em Launch Job process in Load Mode \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_easy_save_v2_1_1_view_models_1_1_list_job_view_model_a3e3f05dfd9862a4f26cb6f25bccefd87}\label{class_easy_save_v2_1_1_view_models_1_1_list_job_view_model_a3e3f05dfd9862a4f26cb6f25bccefd87}} 
+static \mbox{\hyperlink{class_easy_save_v2_1_1_view_models_1_1_list_job_view_model}{List\+Job\+View\+Model}} {\bfseries Get\+List\+Job\+View\+Model} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_easy_save_v2_1_1_view_models_1_1_list_job_view_model_a76ae56da029922365d71598218c8b28d}\label{class_easy_save_v2_1_1_view_models_1_1_list_job_view_model_a76ae56da029922365d71598218c8b28d}} 
+static Mutex {\bfseries refresh\+Mutex} = new Mutex()
+\item 
+\mbox{\Hypertarget{class_easy_save_v2_1_1_view_models_1_1_list_job_view_model_a595d2b54876227c99fe0b75f1bbe2e3f}\label{class_easy_save_v2_1_1_view_models_1_1_list_job_view_model_a595d2b54876227c99fe0b75f1bbe2e3f}} 
+static Mutex {\bfseries Modify\+List} = new Mutex()
+\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+List$<$ \mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}} $>$ \mbox{\hyperlink{class_easy_save_v2_1_1_view_models_1_1_list_job_view_model_ad67357120ff775afd8093ea6f0b03969}{List\+Job}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Method allowing to get value of a list \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_easy_save_v2_1_1_view_models_1_1_list_job_view_model_abde5cd85892c00296ab5270e61b7634d}\label{class_easy_save_v2_1_1_view_models_1_1_list_job_view_model_abde5cd85892c00296ab5270e61b7634d}} 
+Property\+Changed\+Event\+Handler {\bfseries Property\+Changed} = (sender, e) =$>$ \{ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_easy_save_v2_1_1_view_models_1_1_list_job_view_model_a96e8121c04e6f7c5cf869a6ba62e707a}\label{class_easy_save_v2_1_1_view_models_1_1_list_job_view_model_a96e8121c04e6f7c5cf869a6ba62e707a}} 
+\index{EasySaveV2.ViewModels.ListJobViewModel@{EasySaveV2.ViewModels.ListJobViewModel}!LoadJob@{LoadJob}}
+\index{LoadJob@{LoadJob}!EasySaveV2.ViewModels.ListJobViewModel@{EasySaveV2.ViewModels.ListJobViewModel}}
+\doxysubsubsection{\texorpdfstring{LoadJob()}{LoadJob()}}
+{\footnotesize\ttfamily void Easy\+Save\+V2.\+View\+Models.\+List\+Job\+View\+Model.\+Load\+Job (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}}}]{job }\end{DoxyParamCaption})}
+
+
+
+Launch Job process in Load Mode 
+
+
+\begin{DoxyParams}{Parameters}
+{\em job} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_easy_save_v2_1_1_view_models_1_1_list_job_view_model_ad64dee5cf68826108f34b782cbd79406}\label{class_easy_save_v2_1_1_view_models_1_1_list_job_view_model_ad64dee5cf68826108f34b782cbd79406}} 
+\index{EasySaveV2.ViewModels.ListJobViewModel@{EasySaveV2.ViewModels.ListJobViewModel}!PauseJob@{PauseJob}}
+\index{PauseJob@{PauseJob}!EasySaveV2.ViewModels.ListJobViewModel@{EasySaveV2.ViewModels.ListJobViewModel}}
+\doxysubsubsection{\texorpdfstring{PauseJob()}{PauseJob()}}
+{\footnotesize\ttfamily void Easy\+Save\+V2.\+View\+Models.\+List\+Job\+View\+Model.\+Pause\+Job (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}}}]{job }\end{DoxyParamCaption})}
+
+
+
+Pause Job if in Process 
+
+
+\begin{DoxyParams}{Parameters}
+{\em job} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_easy_save_v2_1_1_view_models_1_1_list_job_view_model_a1c5efd560a60e22b5de4b4dfa9a55e64}\label{class_easy_save_v2_1_1_view_models_1_1_list_job_view_model_a1c5efd560a60e22b5de4b4dfa9a55e64}} 
+\index{EasySaveV2.ViewModels.ListJobViewModel@{EasySaveV2.ViewModels.ListJobViewModel}!StartOrContinueJob@{StartOrContinueJob}}
+\index{StartOrContinueJob@{StartOrContinueJob}!EasySaveV2.ViewModels.ListJobViewModel@{EasySaveV2.ViewModels.ListJobViewModel}}
+\doxysubsubsection{\texorpdfstring{StartOrContinueJob()}{StartOrContinueJob()}}
+{\footnotesize\ttfamily void Easy\+Save\+V2.\+View\+Models.\+List\+Job\+View\+Model.\+Start\+Or\+Continue\+Job (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}}}]{job }\end{DoxyParamCaption})}
+
+
+
+Launch Job\+Process if not exit, and continue it if exist and in pause 
+
+
+\begin{DoxyParams}{Parameters}
+{\em job} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_easy_save_v2_1_1_view_models_1_1_list_job_view_model_a53ab322dedee48d7d25da674c67cf8b2}\label{class_easy_save_v2_1_1_view_models_1_1_list_job_view_model_a53ab322dedee48d7d25da674c67cf8b2}} 
+\index{EasySaveV2.ViewModels.ListJobViewModel@{EasySaveV2.ViewModels.ListJobViewModel}!StopJob@{StopJob}}
+\index{StopJob@{StopJob}!EasySaveV2.ViewModels.ListJobViewModel@{EasySaveV2.ViewModels.ListJobViewModel}}
+\doxysubsubsection{\texorpdfstring{StopJob()}{StopJob()}}
+{\footnotesize\ttfamily void Easy\+Save\+V2.\+View\+Models.\+List\+Job\+View\+Model.\+Stop\+Job (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}}}]{job }\end{DoxyParamCaption})}
+
+
+
+Stop Job if exist 
+
+
+\begin{DoxyParams}{Parameters}
+{\em job} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Property Documentation}
+\mbox{\Hypertarget{class_easy_save_v2_1_1_view_models_1_1_list_job_view_model_ad67357120ff775afd8093ea6f0b03969}\label{class_easy_save_v2_1_1_view_models_1_1_list_job_view_model_ad67357120ff775afd8093ea6f0b03969}} 
+\index{EasySaveV2.ViewModels.ListJobViewModel@{EasySaveV2.ViewModels.ListJobViewModel}!ListJob@{ListJob}}
+\index{ListJob@{ListJob}!EasySaveV2.ViewModels.ListJobViewModel@{EasySaveV2.ViewModels.ListJobViewModel}}
+\doxysubsubsection{\texorpdfstring{ListJob}{ListJob}}
+{\footnotesize\ttfamily List$<$\mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}}$>$ Easy\+Save\+V2.\+View\+Models.\+List\+Job\+View\+Model.\+List\+Job\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Method allowing to get value of a list 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+View\+Models/List\+Job\+View\+Model.\+cs\end{DoxyCompactItemize}

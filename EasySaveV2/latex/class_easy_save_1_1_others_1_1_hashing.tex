@@ -1,0 +1,128 @@
+\hypertarget{class_easy_save_1_1_others_1_1_hashing}{}\doxysection{Easy\+Save.\+Others.\+Hashing Class Reference}
+\label{class_easy_save_1_1_others_1_1_hashing}\index{EasySave.Others.Hashing@{EasySave.Others.Hashing}}
+
+
+Class handling Hash  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_easy_save_1_1_others_1_1_hashing_a3f5da6b573bf72a1e3ae5d2c0b642390}{Get\+Hash\+File}} (string filename)
+\begin{DoxyCompactList}\small\item\em Class allowing to return the hash of a file \end{DoxyCompactList}\item 
+static Dictionary$<$ string, string $>$ \mbox{\hyperlink{class_easy_save_1_1_others_1_1_hashing_aba3d0e80f23cd8f01f8c09efd39ca3bd}{Get\+Last\+Hash\+Job}} (string name\+Job)
+\begin{DoxyCompactList}\small\item\em Method allowing to return a dictionary with the last hash job \end{DoxyCompactList}\item 
+static Dictionary$<$ string, string $>$ \mbox{\hyperlink{class_easy_save_1_1_others_1_1_hashing_a74698d1e8ed191586758ed712d79c9df}{Get\+All\+Hash\+Folder}} (string path)
+\begin{DoxyCompactList}\small\item\em Method allowing to return a Dictionnary with all hash from a folder \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_easy_save_1_1_others_1_1_hashing_a92eb3e2047e5879f84e784ecff749abb}{Write\+All\+Hash}} (string name\+Job, Dictionary$<$ string, string $>$ dico\+Hash)
+\begin{DoxyCompactList}\small\item\em Method allowing to write on a file all hash from a Job \end{DoxyCompactList}\item 
+static Dictionary$<$ string, string $>$ \mbox{\hyperlink{class_easy_save_1_1_others_1_1_hashing_a0371269d280258e60ee140a471c280f4}{Update\+Hash\+Dico}} (Dictionary$<$ string, string $>$ dico\+Job\+Hash\+File, List$<$ string $>$ file\+To\+Copy, List$<$ string $>$ file\+To\+Delete, \mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}} job)
+\begin{DoxyCompactList}\small\item\em Method allowing to Update an hash dictionnary \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class handling Hash 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_easy_save_1_1_others_1_1_hashing_a74698d1e8ed191586758ed712d79c9df}\label{class_easy_save_1_1_others_1_1_hashing_a74698d1e8ed191586758ed712d79c9df}} 
+\index{EasySave.Others.Hashing@{EasySave.Others.Hashing}!GetAllHashFolder@{GetAllHashFolder}}
+\index{GetAllHashFolder@{GetAllHashFolder}!EasySave.Others.Hashing@{EasySave.Others.Hashing}}
+\doxysubsubsection{\texorpdfstring{GetAllHashFolder()}{GetAllHashFolder()}}
+{\footnotesize\ttfamily static Dictionary$<$string, string$>$ Easy\+Save.\+Others.\+Hashing.\+Get\+All\+Hash\+Folder (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Method allowing to return a Dictionnary with all hash from a folder 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Dictionary(string, string)
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easy_save_1_1_others_1_1_hashing_a3f5da6b573bf72a1e3ae5d2c0b642390}\label{class_easy_save_1_1_others_1_1_hashing_a3f5da6b573bf72a1e3ae5d2c0b642390}} 
+\index{EasySave.Others.Hashing@{EasySave.Others.Hashing}!GetHashFile@{GetHashFile}}
+\index{GetHashFile@{GetHashFile}!EasySave.Others.Hashing@{EasySave.Others.Hashing}}
+\doxysubsubsection{\texorpdfstring{GetHashFile()}{GetHashFile()}}
+{\footnotesize\ttfamily static string Easy\+Save.\+Others.\+Hashing.\+Get\+Hash\+File (\begin{DoxyParamCaption}\item[{string}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Class allowing to return the hash of a file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & String(path)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easy_save_1_1_others_1_1_hashing_aba3d0e80f23cd8f01f8c09efd39ca3bd}\label{class_easy_save_1_1_others_1_1_hashing_aba3d0e80f23cd8f01f8c09efd39ca3bd}} 
+\index{EasySave.Others.Hashing@{EasySave.Others.Hashing}!GetLastHashJob@{GetLastHashJob}}
+\index{GetLastHashJob@{GetLastHashJob}!EasySave.Others.Hashing@{EasySave.Others.Hashing}}
+\doxysubsubsection{\texorpdfstring{GetLastHashJob()}{GetLastHashJob()}}
+{\footnotesize\ttfamily static Dictionary$<$string, string$>$ Easy\+Save.\+Others.\+Hashing.\+Get\+Last\+Hash\+Job (\begin{DoxyParamCaption}\item[{string}]{name\+Job }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Method allowing to return a dictionary with the last hash job 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+Job} & string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Dictionary(string, string)/returns$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easy_save_1_1_others_1_1_hashing_a0371269d280258e60ee140a471c280f4}\label{class_easy_save_1_1_others_1_1_hashing_a0371269d280258e60ee140a471c280f4}} 
+\index{EasySave.Others.Hashing@{EasySave.Others.Hashing}!UpdateHashDico@{UpdateHashDico}}
+\index{UpdateHashDico@{UpdateHashDico}!EasySave.Others.Hashing@{EasySave.Others.Hashing}}
+\doxysubsubsection{\texorpdfstring{UpdateHashDico()}{UpdateHashDico()}}
+{\footnotesize\ttfamily static Dictionary$<$string, string$>$ Easy\+Save.\+Others.\+Hashing.\+Update\+Hash\+Dico (\begin{DoxyParamCaption}\item[{Dictionary$<$ string, string $>$}]{dico\+Job\+Hash\+File,  }\item[{List$<$ string $>$}]{file\+To\+Copy,  }\item[{List$<$ string $>$}]{file\+To\+Delete,  }\item[{\mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}}}]{job }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Method allowing to Update an hash dictionnary 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dico\+Job\+Hash\+File} & Dictionary(string, string) \\
+\hline
+{\em file\+To\+Copy} & List(string)\\
+\hline
+{\em file\+To\+Delete} & List(string)\\
+\hline
+{\em job} & Job\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Dictionary(string, string)
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easy_save_1_1_others_1_1_hashing_a92eb3e2047e5879f84e784ecff749abb}\label{class_easy_save_1_1_others_1_1_hashing_a92eb3e2047e5879f84e784ecff749abb}} 
+\index{EasySave.Others.Hashing@{EasySave.Others.Hashing}!WriteAllHash@{WriteAllHash}}
+\index{WriteAllHash@{WriteAllHash}!EasySave.Others.Hashing@{EasySave.Others.Hashing}}
+\doxysubsubsection{\texorpdfstring{WriteAllHash()}{WriteAllHash()}}
+{\footnotesize\ttfamily static void Easy\+Save.\+Others.\+Hashing.\+Write\+All\+Hash (\begin{DoxyParamCaption}\item[{string}]{name\+Job,  }\item[{Dictionary$<$ string, string $>$}]{dico\+Hash }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Method allowing to write on a file all hash from a Job 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name\+Job} & string\\
+\hline
+{\em dico\+Hash} & Dictionary(string, string)\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Others/Hashing.\+cs\end{DoxyCompactItemize}

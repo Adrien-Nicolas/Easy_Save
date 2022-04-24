@@ -1,0 +1,84 @@
+﻿<Page x:Class="EasySaveV2.Views.SizeFile"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EasySaveV2.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="1200"
+      Title="SizeFile" Background="White">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="../Assets/photo_adri2.jpg" ></ImageBrush>
+        </Grid.Background>
+        <Label Content="Max File size" FontSize="40" Foreground="LightBlue" Height="61" HorizontalAlignment="Center" Name="MaxsizeLabel" VerticalAlignment="Top" Margin="0,65,0,0" Width="292" FontFamily="Calibri Light" />
+        <ComboBox ItemsSource="{Binding SizeSource}" Name ="ComboSize" Margin="865,166,107,563" RenderTransformOrigin="0.921,-0.5" FontFamily="Calibri Light" FontSize="14">
+        </ComboBox>
+
+        <TextBox Name="SizeBox"  Margin="198,166,396,563" Text="{Binding Size}" FontFamily="Calibri Light" FontSize="14"/>
+        <Button Content="Back" Name="Back" Click="BackMethod" Margin="198,458,793,266" FontFamily="Calibri Light" FontSize="14">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="lightblue"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}" CornerRadius="8" BorderBrush="Black" BorderThickness="1">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="MediumPurple" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Button Content="Delete" Name="Delete" Click="DeleteMethod" Margin="493,458,498,266" FontFamily="Calibri Light" FontSize="14">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="lightblue"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}" CornerRadius="8" BorderBrush="Black" BorderThickness="1">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="MediumPurple" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Button Content="DefSizeMax" Name="DefSizeMax" Click="DefSizeMethod" Margin="198,302,498,418" RenderTransformOrigin="0.428,0.667" FontFamily="Calibri Light" FontSize="14">
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="lightblue"/>
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border Background="{TemplateBinding Background}" CornerRadius="8" BorderBrush="Black" BorderThickness="1">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="MediumPurple" />
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+    </Grid>
+</Page>

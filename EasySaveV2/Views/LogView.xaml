@@ -1,0 +1,104 @@
+﻿<Page x:Class="EasySaveV2.Views.LogView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:EasySaveV2.Views"
+             mc:Ignorable="d" d:DesignWidth="1200"
+             Title="LogView" Height="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="../Assets/photo_adri2.jpg" ></ImageBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <DockPanel  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5">
+            <TextBlock Text="Logs" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" Height="58" Width="104" FontSize="40" Foreground="LightBlue" FontFamily="Calibri Light"/>
+        </DockPanel>
+        <DockPanel  Grid.Row="1" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="5">
+            <StackPanel>
+                <Button Name="OpenLogJournalier" Content="Open Folder Log Journalier" Click="OpenLogJournalier_Click" Height="50" Width="325" RenderTransformOrigin="0.507,0.566" Margin="0,30,0,0" FontFamily="Calibri Light" FontSize="14">
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="lightblue"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Background="{TemplateBinding Background}" CornerRadius="8" BorderBrush="Black" BorderThickness="1">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="MediumPurple" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                <Button Name="OpenLogEtat" Content="Open Folder Log Etat" Click="OpenLogEtat_Click" Height="50" Width="325" RenderTransformOrigin="0.507,0.566" Margin="0,30,0,0" FontFamily="Calibri Light" FontSize="14">
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="lightblue"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Background="{TemplateBinding Background}" CornerRadius="8" BorderBrush="Black" BorderThickness="1">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="MediumPurple" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+                <Button Name="back" Content="back" Click="back_Click" Height="50" Width="325" RenderTransformOrigin="0.507,0.566" Margin="0,30,0,0" FontFamily="Calibri Light" FontSize="14">
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="lightblue"/>
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="{x:Type Button}">
+                                        <Border Background="{TemplateBinding Background}" CornerRadius="8" BorderBrush="Black" BorderThickness="1">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="MediumPurple" />
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                </Button>
+
+            </StackPanel>
+        </DockPanel>
+        <DockPanel  Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="5">
+
+        </DockPanel>
+        <!--<ContentControl Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="4" Grid.RowSpan="5">
+        </ContentControl>-->
+    </Grid>
+</Page>

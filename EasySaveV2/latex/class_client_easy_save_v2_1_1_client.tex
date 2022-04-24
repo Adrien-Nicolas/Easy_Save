@@ -1,0 +1,101 @@
+\hypertarget{class_client_easy_save_v2_1_1_client}{}\doxysection{Client\+Easy\+Save\+V2.\+Client Class Reference}
+\label{class_client_easy_save_v2_1_1_client}\index{ClientEasySaveV2.Client@{ClientEasySaveV2.Client}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_client_easy_save_v2_1_1_client_a2bbddad6c86112bcaf63db635a014793}\label{class_client_easy_save_v2_1_1_client_a2bbddad6c86112bcaf63db635a014793}} 
+delegate void {\bfseries Message\+Received\+Event} (\mbox{\hyperlink{class_client_easy_save_v2_1_1_client}{Client}} c, string msg)
+\item 
+\mbox{\Hypertarget{class_client_easy_save_v2_1_1_client_a3f203bce1ca375abb8efbade02243a30}\label{class_client_easy_save_v2_1_1_client_a3f203bce1ca375abb8efbade02243a30}} 
+delegate void {\bfseries On\+Crash} ()
+\item 
+\mbox{\Hypertarget{class_client_easy_save_v2_1_1_client_aef0b33011becbeb7ee6b040b62e3f023}\label{class_client_easy_save_v2_1_1_client_aef0b33011becbeb7ee6b040b62e3f023}} 
+{\bfseries Client} (Socket socket)
+\item 
+void \mbox{\hyperlink{class_client_easy_save_v2_1_1_client_a68dcf77c54af069dfd2d044bdfebb7b6}{Wait\+And\+Connect}} (IPEnd\+Point ie)
+\begin{DoxyCompactList}\small\item\em Wait until connect success \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_client_easy_save_v2_1_1_client_a3d16405e13d95184caa127b07ab1d19f}{Start\+Receiving}} ()
+\begin{DoxyCompactList}\small\item\em Async, start receiving response \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_client_easy_save_v2_1_1_client_a4fe5a6d5fd77205c64d1c4625e864668}{Disconnect}} ()
+\begin{DoxyCompactList}\small\item\em Disconnect the \mbox{\hyperlink{class_client_easy_save_v2_1_1_client}{Client}} \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_client_easy_save_v2_1_1_client_a6bcdabd02182babcfebb5dfdc18dac67}{Send}} (string data)
+\begin{DoxyCompactList}\small\item\em Send string to the linked socket \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_client_easy_save_v2_1_1_client_a460b4751e59189a7cedb404d03d73af5}\label{class_client_easy_save_v2_1_1_client_a460b4751e59189a7cedb404d03d73af5}} 
+Socket {\bfseries \+\_\+socket}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_client_easy_save_v2_1_1_client_a5b497a4912587de8cfce605cbc4853a5}\label{class_client_easy_save_v2_1_1_client_a5b497a4912587de8cfce605cbc4853a5}} 
+int {\bfseries port}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\item 
+\mbox{\Hypertarget{class_client_easy_save_v2_1_1_client_a4a80ed1c9dd55cb08aefc8694844c2a5}\label{class_client_easy_save_v2_1_1_client_a4a80ed1c9dd55cb08aefc8694844c2a5}} 
+string {\bfseries ip\+Address}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Events}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_client_easy_save_v2_1_1_client_a854b167a39c88a18f73234d1cb06f430}\label{class_client_easy_save_v2_1_1_client_a854b167a39c88a18f73234d1cb06f430}} 
+Message\+Received\+Event {\bfseries On\+Messsage\+Received}
+\item 
+\mbox{\Hypertarget{class_client_easy_save_v2_1_1_client_a1ddc4a09433449b8b440d1a63229b6e8}\label{class_client_easy_save_v2_1_1_client_a1ddc4a09433449b8b440d1a63229b6e8}} 
+On\+Crash {\bfseries On\+Crashed}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_client_easy_save_v2_1_1_client_a4fe5a6d5fd77205c64d1c4625e864668}\label{class_client_easy_save_v2_1_1_client_a4fe5a6d5fd77205c64d1c4625e864668}} 
+\index{ClientEasySaveV2.Client@{ClientEasySaveV2.Client}!Disconnect@{Disconnect}}
+\index{Disconnect@{Disconnect}!ClientEasySaveV2.Client@{ClientEasySaveV2.Client}}
+\doxysubsubsection{\texorpdfstring{Disconnect()}{Disconnect()}}
+{\footnotesize\ttfamily void Client\+Easy\+Save\+V2.\+Client.\+Disconnect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Disconnect the \mbox{\hyperlink{class_client_easy_save_v2_1_1_client}{Client}} 
+
+\mbox{\Hypertarget{class_client_easy_save_v2_1_1_client_a6bcdabd02182babcfebb5dfdc18dac67}\label{class_client_easy_save_v2_1_1_client_a6bcdabd02182babcfebb5dfdc18dac67}} 
+\index{ClientEasySaveV2.Client@{ClientEasySaveV2.Client}!Send@{Send}}
+\index{Send@{Send}!ClientEasySaveV2.Client@{ClientEasySaveV2.Client}}
+\doxysubsubsection{\texorpdfstring{Send()}{Send()}}
+{\footnotesize\ttfamily void Client\+Easy\+Save\+V2.\+Client.\+Send (\begin{DoxyParamCaption}\item[{string}]{data }\end{DoxyParamCaption})}
+
+
+
+Send string to the linked socket 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_client_easy_save_v2_1_1_client_a3d16405e13d95184caa127b07ab1d19f}\label{class_client_easy_save_v2_1_1_client_a3d16405e13d95184caa127b07ab1d19f}} 
+\index{ClientEasySaveV2.Client@{ClientEasySaveV2.Client}!StartReceiving@{StartReceiving}}
+\index{StartReceiving@{StartReceiving}!ClientEasySaveV2.Client@{ClientEasySaveV2.Client}}
+\doxysubsubsection{\texorpdfstring{StartReceiving()}{StartReceiving()}}
+{\footnotesize\ttfamily void Client\+Easy\+Save\+V2.\+Client.\+Start\+Receiving (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Async, start receiving response 
+
+\mbox{\Hypertarget{class_client_easy_save_v2_1_1_client_a68dcf77c54af069dfd2d044bdfebb7b6}\label{class_client_easy_save_v2_1_1_client_a68dcf77c54af069dfd2d044bdfebb7b6}} 
+\index{ClientEasySaveV2.Client@{ClientEasySaveV2.Client}!WaitAndConnect@{WaitAndConnect}}
+\index{WaitAndConnect@{WaitAndConnect}!ClientEasySaveV2.Client@{ClientEasySaveV2.Client}}
+\doxysubsubsection{\texorpdfstring{WaitAndConnect()}{WaitAndConnect()}}
+{\footnotesize\ttfamily void Client\+Easy\+Save\+V2.\+Client.\+Wait\+And\+Connect (\begin{DoxyParamCaption}\item[{IPEnd\+Point}]{ie }\end{DoxyParamCaption})}
+
+
+
+Wait until connect success 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ie} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Client\+Easy\+Save\+V2/Client.\+cs\end{DoxyCompactItemize}

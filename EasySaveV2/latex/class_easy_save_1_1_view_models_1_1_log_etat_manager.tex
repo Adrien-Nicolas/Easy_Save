@@ -1,0 +1,112 @@
+\hypertarget{class_easy_save_1_1_view_models_1_1_log_etat_manager}{}\doxysection{Easy\+Save.\+View\+Models.\+Log\+Etat\+Manager Class Reference}
+\label{class_easy_save_1_1_view_models_1_1_log_etat_manager}\index{EasySave.ViewModels.LogEtatManager@{EasySave.ViewModels.LogEtatManager}}
+
+
+class of the controller log etat  
+
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{class_easy_save_1_1_view_models_1_1_log_etat_manager_a718e8c64f97fc219dd8ff4319f612317}{Write}} (\mbox{\hyperlink{class_easy_save_1_1_models_1_1_log_etat}{Log\+Etat}} log\+Etat)
+\begin{DoxyCompactList}\small\item\em function to write the logetat.\+json file \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_easy_save_1_1_view_models_1_1_log_etat_manager_ad436e38327bfcdadf47e263ceea59c82}{Init\+File}} (\mbox{\hyperlink{class_easy_save_1_1_models_1_1_log_etat}{Log\+Etat}} log\+Etat)
+\begin{DoxyCompactList}\small\item\em Method allowing to init Log\+Etat File \end{DoxyCompactList}\item 
+static List$<$ \mbox{\hyperlink{class_easy_save_1_1_models_1_1_log_etat}{Log\+Etat}} $>$ \mbox{\hyperlink{class_easy_save_1_1_view_models_1_1_log_etat_manager_a7efd75f24e5c59e2bd841280e701c6e3}{verif\+Last\+Log\+Etat}} (string job\+Name)
+\begin{DoxyCompactList}\small\item\em Function to check the last log\+Etat if its End status. Return log\+Etat if not verif \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_easy_save_1_1_view_models_1_1_log_etat_manager_acb0c464c41d7f781ea2d9d3b4be2613f}\label{class_easy_save_1_1_view_models_1_1_log_etat_manager_acb0c464c41d7f781ea2d9d3b4be2613f}} 
+static List$<$ \mbox{\hyperlink{class_easy_save_1_1_models_1_1_log_etat}{Log\+Etat}} $>$ {\bfseries get\+Last\+Log\+Etat} (string job\+Name)
+\item 
+static void \mbox{\hyperlink{class_easy_save_1_1_view_models_1_1_log_etat_manager_ad3d71d3a21f84703622c66143a417637}{End\+Log\+Etat}} (\mbox{\hyperlink{class_easy_save_1_1_models_1_1_log_etat}{Log\+Etat}} log\+Etat)
+\begin{DoxyCompactList}\small\item\em Method allowing to write log\+Etat state = \char`\"{}\+END\char`\"{} in Log\+Etat file \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_easy_save_1_1_models_1_1_log_etat}{Log\+Etat}} \mbox{\hyperlink{class_easy_save_1_1_view_models_1_1_log_etat_manager_a7023f972345614fc7af3c6112f57ecd1}{Init\+Log\+Etat\+Files\+Info}} (\mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}} job, List$<$ string $>$ list\+File\+To\+Copy)
+\begin{DoxyCompactList}\small\item\em Method allowing to init\+Log\+Etat file. We go through each folder, and check if the files are different and the mode is differential, if the mode is complete, and write the information in the status log according to these parameters \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+class of the controller log etat 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_easy_save_1_1_view_models_1_1_log_etat_manager_ad3d71d3a21f84703622c66143a417637}\label{class_easy_save_1_1_view_models_1_1_log_etat_manager_ad3d71d3a21f84703622c66143a417637}} 
+\index{EasySave.ViewModels.LogEtatManager@{EasySave.ViewModels.LogEtatManager}!EndLogEtat@{EndLogEtat}}
+\index{EndLogEtat@{EndLogEtat}!EasySave.ViewModels.LogEtatManager@{EasySave.ViewModels.LogEtatManager}}
+\doxysubsubsection{\texorpdfstring{EndLogEtat()}{EndLogEtat()}}
+{\footnotesize\ttfamily static void Easy\+Save.\+View\+Models.\+Log\+Etat\+Manager.\+End\+Log\+Etat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_easy_save_1_1_models_1_1_log_etat}{Log\+Etat}}}]{log\+Etat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Method allowing to write log\+Etat state = \char`\"{}\+END\char`\"{} in Log\+Etat file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em log\+Etat} & Log\+Etat\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_easy_save_1_1_view_models_1_1_log_etat_manager_ad436e38327bfcdadf47e263ceea59c82}\label{class_easy_save_1_1_view_models_1_1_log_etat_manager_ad436e38327bfcdadf47e263ceea59c82}} 
+\index{EasySave.ViewModels.LogEtatManager@{EasySave.ViewModels.LogEtatManager}!InitFile@{InitFile}}
+\index{InitFile@{InitFile}!EasySave.ViewModels.LogEtatManager@{EasySave.ViewModels.LogEtatManager}}
+\doxysubsubsection{\texorpdfstring{InitFile()}{InitFile()}}
+{\footnotesize\ttfamily static void Easy\+Save.\+View\+Models.\+Log\+Etat\+Manager.\+Init\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_easy_save_1_1_models_1_1_log_etat}{Log\+Etat}}}]{log\+Etat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Method allowing to init Log\+Etat File 
+
+
+\begin{DoxyParams}{Parameters}
+{\em log\+Etat} & Log\+Etat\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_easy_save_1_1_view_models_1_1_log_etat_manager_a7023f972345614fc7af3c6112f57ecd1}\label{class_easy_save_1_1_view_models_1_1_log_etat_manager_a7023f972345614fc7af3c6112f57ecd1}} 
+\index{EasySave.ViewModels.LogEtatManager@{EasySave.ViewModels.LogEtatManager}!InitLogEtatFilesInfo@{InitLogEtatFilesInfo}}
+\index{InitLogEtatFilesInfo@{InitLogEtatFilesInfo}!EasySave.ViewModels.LogEtatManager@{EasySave.ViewModels.LogEtatManager}}
+\doxysubsubsection{\texorpdfstring{InitLogEtatFilesInfo()}{InitLogEtatFilesInfo()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_easy_save_1_1_models_1_1_log_etat}{Log\+Etat}} Easy\+Save.\+View\+Models.\+Log\+Etat\+Manager.\+Init\+Log\+Etat\+Files\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_easy_save_1_1_models_1_1_job}{Job}}}]{job,  }\item[{List$<$ string $>$}]{list\+File\+To\+Copy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Method allowing to init\+Log\+Etat file. We go through each folder, and check if the files are different and the mode is differential, if the mode is complete, and write the information in the status log according to these parameters 
+
+
+\begin{DoxyParams}{Parameters}
+{\em job} & Job\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Log\+Etat
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easy_save_1_1_view_models_1_1_log_etat_manager_a7efd75f24e5c59e2bd841280e701c6e3}\label{class_easy_save_1_1_view_models_1_1_log_etat_manager_a7efd75f24e5c59e2bd841280e701c6e3}} 
+\index{EasySave.ViewModels.LogEtatManager@{EasySave.ViewModels.LogEtatManager}!verifLastLogEtat@{verifLastLogEtat}}
+\index{verifLastLogEtat@{verifLastLogEtat}!EasySave.ViewModels.LogEtatManager@{EasySave.ViewModels.LogEtatManager}}
+\doxysubsubsection{\texorpdfstring{verifLastLogEtat()}{verifLastLogEtat()}}
+{\footnotesize\ttfamily static List$<$\mbox{\hyperlink{class_easy_save_1_1_models_1_1_log_etat}{Log\+Etat}}$>$ Easy\+Save.\+View\+Models.\+Log\+Etat\+Manager.\+verif\+Last\+Log\+Etat (\begin{DoxyParamCaption}\item[{string}]{job\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Function to check the last log\+Etat if its End status. Return log\+Etat if not verif 
+
+\begin{DoxyReturn}{Returns}
+bool
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easy_save_1_1_view_models_1_1_log_etat_manager_a718e8c64f97fc219dd8ff4319f612317}\label{class_easy_save_1_1_view_models_1_1_log_etat_manager_a718e8c64f97fc219dd8ff4319f612317}} 
+\index{EasySave.ViewModels.LogEtatManager@{EasySave.ViewModels.LogEtatManager}!Write@{Write}}
+\index{Write@{Write}!EasySave.ViewModels.LogEtatManager@{EasySave.ViewModels.LogEtatManager}}
+\doxysubsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily static void Easy\+Save.\+View\+Models.\+Log\+Etat\+Manager.\+Write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_easy_save_1_1_models_1_1_log_etat}{Log\+Etat}}}]{log\+Etat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+function to write the logetat.\+json file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em log\+Etat} & Log\+Etat\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+View\+Models/Log\+Etat\+Manager.\+cs\end{DoxyCompactItemize}

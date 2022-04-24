@@ -1,0 +1,190 @@
+\hypertarget{class_easy_save_v2_1_1_others_1_1_x_m_l}{}\doxysection{Easy\+Save\+V2.\+Others.\+XML Class Reference}
+\label{class_easy_save_v2_1_1_others_1_1_x_m_l}\index{EasySaveV2.Others.XML@{EasySaveV2.Others.XML}}
+Inheritance diagram for Easy\+Save\+V2.\+Others.\+XML\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_easy_save_v2_1_1_others_1_1_x_m_l}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_easy_save_v2_1_1_others_1_1_x_m_l_a343e1defe2b4672acfa20304cf3bbdea}{XML}} ()
+\begin{DoxyCompactList}\small\item\em Contructeur de la classe json \end{DoxyCompactList}\item 
+Dictionary$<$ string, string $>$ \mbox{\hyperlink{class_easy_save_v2_1_1_others_1_1_x_m_l_acee766a639b954848d87d2ef445fa024}{Read}} (string path)
+\begin{DoxyCompactList}\small\item\em Method to read a file and return a dictionary \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_easy_save_v2_1_1_others_1_1_x_m_l_ae951643119c8333e8d4cbe070391a9cd}\label{class_easy_save_v2_1_1_others_1_1_x_m_l_ae951643119c8333e8d4cbe070391a9cd}} 
+List$<$ string $>$ {\bfseries Read\+To\+List} (string path)
+\item 
+override bool \mbox{\hyperlink{class_easy_save_v2_1_1_others_1_1_x_m_l_a88da8cf8241fc2fb830ef00e31038cf7}{Write$<$ T $>$}} (string path, T t)
+\begin{DoxyCompactList}\small\item\em Method to write on a JSON file \end{DoxyCompactList}\item 
+override bool \mbox{\hyperlink{class_easy_save_v2_1_1_others_1_1_x_m_l_a6ef61c59c626479d30e261cb625b0013}{Write\+List$<$ T $>$}} (string path, List$<$ T $>$ listT, bool del=false)
+\begin{DoxyCompactList}\small\item\em Method allowing to Write in a List of object. \end{DoxyCompactList}\item 
+List$<$ T $>$ \mbox{\hyperlink{class_easy_save_v2_1_1_others_1_1_x_m_l_ac6e70513c954b03d73955b4b864a2452}{Read$<$ T $>$}} (string path)
+\begin{DoxyCompactList}\small\item\em Method to return a List of a JSON file \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_easy_save_v2_1_1_others_1_1_x_m_l_acbc5dbc0898c335b6100939d9d7b941d}{Write}} (string path, Dictionary$<$ string, string $>$ dico)
+\begin{DoxyCompactList}\small\item\em Method allowing to Write \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static object \mbox{\hyperlink{class_easy_save_v2_1_1_others_1_1_x_m_l_a59f437bb35b797e8e253fd8aad3b1371}{read\+Pos$<$ T $>$}} (string path, int pos)
+\begin{DoxyCompactList}\small\item\em Method to read an object file from a json file \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_easy_save_v2_1_1_others_1_1_x_m_l_a343e1defe2b4672acfa20304cf3bbdea}\label{class_easy_save_v2_1_1_others_1_1_x_m_l_a343e1defe2b4672acfa20304cf3bbdea}} 
+\index{EasySaveV2.Others.XML@{EasySaveV2.Others.XML}!XML@{XML}}
+\index{XML@{XML}!EasySaveV2.Others.XML@{EasySaveV2.Others.XML}}
+\doxysubsubsection{\texorpdfstring{XML()}{XML()}}
+{\footnotesize\ttfamily Easy\+Save\+V2.\+Others.\+XML.\+XML (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Contructeur de la classe json 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_easy_save_v2_1_1_others_1_1_x_m_l_acee766a639b954848d87d2ef445fa024}\label{class_easy_save_v2_1_1_others_1_1_x_m_l_acee766a639b954848d87d2ef445fa024}} 
+\index{EasySaveV2.Others.XML@{EasySaveV2.Others.XML}!Read@{Read}}
+\index{Read@{Read}!EasySaveV2.Others.XML@{EasySaveV2.Others.XML}}
+\doxysubsubsection{\texorpdfstring{Read()}{Read()}}
+{\footnotesize\ttfamily Dictionary$<$string, string$>$ Easy\+Save\+V2.\+Others.\+XML.\+Read (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})}
+
+
+
+Method to read a file and return a dictionary 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Dictionary string, string
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easy_save_v2_1_1_others_1_1_x_m_l_ac6e70513c954b03d73955b4b864a2452}\label{class_easy_save_v2_1_1_others_1_1_x_m_l_ac6e70513c954b03d73955b4b864a2452}} 
+\index{EasySaveV2.Others.XML@{EasySaveV2.Others.XML}!Read$<$ T $>$@{Read$<$ T $>$}}
+\index{Read$<$ T $>$@{Read$<$ T $>$}!EasySaveV2.Others.XML@{EasySaveV2.Others.XML}}
+\doxysubsubsection{\texorpdfstring{Read$<$ T $>$()}{Read< T >()}}
+{\footnotesize\ttfamily List$<$T$>$ \mbox{\hyperlink{class_easy_save_v2_1_1_others_1_1_x_m_l_acee766a639b954848d87d2ef445fa024}{Easy\+Save\+V2.\+Others.\+XML.\+Read}}$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})}
+
+
+
+Method to return a List of a JSON file 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Saveworker} & objet\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em path} & string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easy_save_v2_1_1_others_1_1_x_m_l_a59f437bb35b797e8e253fd8aad3b1371}\label{class_easy_save_v2_1_1_others_1_1_x_m_l_a59f437bb35b797e8e253fd8aad3b1371}} 
+\index{EasySaveV2.Others.XML@{EasySaveV2.Others.XML}!readPos$<$ T $>$@{readPos$<$ T $>$}}
+\index{readPos$<$ T $>$@{readPos$<$ T $>$}!EasySaveV2.Others.XML@{EasySaveV2.Others.XML}}
+\doxysubsubsection{\texorpdfstring{readPos$<$ T $>$()}{readPos< T >()}}
+{\footnotesize\ttfamily static object Easy\+Save\+V2.\+Others.\+XML.\+read\+Pos$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{path,  }\item[{int}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Method to read an object file from a json file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & string\\
+\hline
+{\em pos} & int\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_easy_save_v2_1_1_others_1_1_x_m_l_acbc5dbc0898c335b6100939d9d7b941d}\label{class_easy_save_v2_1_1_others_1_1_x_m_l_acbc5dbc0898c335b6100939d9d7b941d}} 
+\index{EasySaveV2.Others.XML@{EasySaveV2.Others.XML}!Write@{Write}}
+\index{Write@{Write}!EasySaveV2.Others.XML@{EasySaveV2.Others.XML}}
+\doxysubsubsection{\texorpdfstring{Write()}{Write()}}
+{\footnotesize\ttfamily void Easy\+Save\+V2.\+Others.\+XML.\+Write (\begin{DoxyParamCaption}\item[{string}]{path,  }\item[{Dictionary$<$ string, string $>$}]{dico }\end{DoxyParamCaption})}
+
+
+
+Method allowing to Write 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & string\\
+\hline
+{\em dico} & Dictionary(string, string)\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_easy_save_v2_1_1_others_1_1_x_m_l_a88da8cf8241fc2fb830ef00e31038cf7}\label{class_easy_save_v2_1_1_others_1_1_x_m_l_a88da8cf8241fc2fb830ef00e31038cf7}} 
+\index{EasySaveV2.Others.XML@{EasySaveV2.Others.XML}!Write$<$ T $>$@{Write$<$ T $>$}}
+\index{Write$<$ T $>$@{Write$<$ T $>$}!EasySaveV2.Others.XML@{EasySaveV2.Others.XML}}
+\doxysubsubsection{\texorpdfstring{Write$<$ T $>$()}{Write< T >()}}
+{\footnotesize\ttfamily override bool \mbox{\hyperlink{class_easy_save_v2_1_1_others_1_1_x_m_l_acbc5dbc0898c335b6100939d9d7b941d}{Easy\+Save\+V2.\+Others.\+XML.\+Write}}$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{path,  }\item[{T}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Method to write on a JSON file 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Objet\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em path} & string\\
+\hline
+{\em t} & instance\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_easy_save_1_1_others_1_1_interact_file_a9be0ae36bde2a68ac34ba81364a13bb1}{Easy\+Save.\+Others.\+Interact\+File}}.
+
+\mbox{\Hypertarget{class_easy_save_v2_1_1_others_1_1_x_m_l_a6ef61c59c626479d30e261cb625b0013}\label{class_easy_save_v2_1_1_others_1_1_x_m_l_a6ef61c59c626479d30e261cb625b0013}} 
+\index{EasySaveV2.Others.XML@{EasySaveV2.Others.XML}!WriteList$<$ T $>$@{WriteList$<$ T $>$}}
+\index{WriteList$<$ T $>$@{WriteList$<$ T $>$}!EasySaveV2.Others.XML@{EasySaveV2.Others.XML}}
+\doxysubsubsection{\texorpdfstring{WriteList$<$ T $>$()}{WriteList< T >()}}
+{\footnotesize\ttfamily override bool Easy\+Save\+V2.\+Others.\+XML.\+Write\+List$<$ T $>$ (\begin{DoxyParamCaption}\item[{string}]{path,  }\item[{List$<$ T $>$}]{listT,  }\item[{bool}]{del = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Method allowing to Write in a List of object. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Object\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em path} & string\\
+\hline
+{\em listT} & List(\+T)\\
+\hline
+{\em del} & bool\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_easy_save_1_1_others_1_1_interact_file}{Easy\+Save.\+Others.\+Interact\+File}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Others/XML.\+cs\end{DoxyCompactItemize}
