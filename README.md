@@ -1,6 +1,6 @@
 ### Easy_Save
 
-Made with [![My Skills](https://skills.thijs.gg/icons?i=c#,.net)](https://skills.thijs.gg)
+Made with [![My Skills](https://skills.thijs.gg/icons?i=cs,)](https://skills.thijs.gg)
 
 ## Usage
 
