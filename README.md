@@ -1,22 +1,29 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+### Easy_Save
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+Made with [![My Skills](https://skills.thijs.gg/icons?i=c#,.net)](https://skills.thijs.gg)
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+## Usage
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+The EasySave application gives the user the possibility to move a quantity of important files to a destination that the user will have to select. The user will be free to select the source directory where files, folders and subfolders are stored.
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+The user will also be able to choose two types of backup jobs (copying files from one directory to another). These two types of jobs are Full or Differential. In full mode, the application moves all the files in the source directory to the destination directory.
 
-Yo 
+![easysave](https://user-images.githubusercontent.com/73825898/171683085-11285c71-c171-4fb9-abe3-41310b74be25.png)
+
+In differential mode, the files in the source directory are compared with the files in the destination directory. If files are identical between the two directories, these files will not be moved.
+
+A set of logs is used, like the logStatus allowing to know where is located the backup job in real time, then the logDaily allowing to know all the files that have been copied.
+
+## Features
+
+# Languages
+
+The application has the option of changing the interface language on all possible views. The application is scalable, you just have to load a language file in JSON format with the right keys to add it to the language dropdown menu, it is easy to set up a new language within it, we currently have 3 languages: French, English, Romanian.
+![unknown](https://user-images.githubusercontent.com/73825898/171683396-ca1cbebb-f66c-46c9-bca3-d2cda6144374.png)
+
+# Save Work
+
+The backup job is broken down into several parts, instructions and features to be as efficient as possible. As part of the specification, an unlimited number of backups were required which must be able to be saved and configured to run individually, and/or together.
+
+The whole backup job is based on the above entities. From the main menu, we are offered an option "Backup job", when the user selects this option, he/she arrives on a view called ListJobView.
+
